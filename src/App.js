@@ -13,16 +13,38 @@ function App() {
 
   const detailsInputbox = <input placeholder={inputPlaceholder} autoComplete />;
 
+  const blogObj = {
+    title: 'Blog Title',
+    description: 'Lorel Ipsum Dorel Lorel Ipsum Dorel Lorel Ipsum Dorel Lorel Ipsum Dorel '
+  }
+
   return (
     <div className="App">
-      <h3>Full Name: {getFullName(fname, lname)}</h3>
-      <h3>Full Name: {fname+' '+lname}</h3>
-      <h3>Full Name: {`${fname} ${lname}`}</h3>
-      <p>Age: {age}</p>
-      <p>{job}</p>
-      <input placeholder={inputPlaceholder} autoComplete />
+      <div>
+        <h3>Full Name: {getFullName(fname, lname)}</h3>
+        <h3>Full Name: {fname+' '+lname}</h3>
+        <h3>Full Name: {`${fname} ${lname}`}</h3>
+        <p>Age: {age}</p>
+        <p>{job}</p>
+        <input placeholder={inputPlaceholder} autoComplete />
 
-      {detailsInputbox}
+        {detailsInputbox}
+      </div>
+      <div>
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>
+      <hr></hr>
+      <div>
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>
+      <hr></hr>
+      <div>
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>
+      <hr></hr>
     </div>
   );
 }
